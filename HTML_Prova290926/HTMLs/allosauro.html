@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allossauro - Introdução</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Allossauro</h1>
+    <p>Uma introdução ao grande predador do Jurássico</p>
+
+    <nav aria-label="Navegação principal">
+        <ul>
+            <li><a href="imagens.html">figuras e videos</a></li>
+            <li><a href="mais.html">Tabela e mais dados do site</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        <article>
+            <h2>Conhecendo o Allossauro</h2>
+
+            <p>
+                <strong>Allosaurus fragilis</strong> foi um dinossauro
+                terópode carnívoro que viveu durante o Jurássico Superior.
+                Ele habitou regiões que atualmente fazem parte da América
+                do Norte.
+            </p>
+
+            <p>
+                <em>Alossauro</em> significa
+                <mark>"lagarto diferente"</mark>. O animal podia atingir
+                aproximadamente <strong>9,7 metros</strong> de comprimento
+                e uma massa estimada em cerca de <strong>2.700 kg</strong>.
+            </p>
+
+            <p>
+                O allossauro caminhava sobre duas pernas e possuía
+                braços relativamente curtos com três dedos.
+                Seu crânio apresentava pequenas estruturas semelhantes
+                a chifres acima dos olhos.
+            </p>
+
+            <blockquote>
+                “Allosaurus was a large meat-eating dinosaur that lived in
+                prehistoric North America.”
+                <cite>Natural History Museum</cite>
+            </blockquote>
+
+            <p>
+                Algumas ideias antigas sobre o animal foram
+                <del>consideradas definitivas</del>
+                <ins>reavaliadas por novas pesquisas paleontológicas</ins>.
+            </p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Uma reconstrução visual</h2>
+
+        <figure>
+            <img src="../img/allol.webp"
+                 alt="Reconstrução artística de um Allossauro"
+                 width="500">
+            <figcaption>
+                Representação artística de um Allossauro.
+            </figcaption>
+        </figure>
+    </section>
+
+    <aside>
+        <h2>Informações rápidas</h2>
+
+        <p>
+            Nome científico:
+            <abbr title="Allosaurus fragilis">A. fragilis</abbr>
+        </p>
+
+        <p>
+            Período aproximado:
+            <strong>152–145 milhões de anos atrás</strong>.
+        </p>
+
+        <p>
+            Dieta: <strong>carnívora</strong>.
+        </p>
+
+        <label for="idade-jurassica">Período representado:</label>
+        <progress id="idade-jurassica" value="100" max="100">
+            100%
+        </progress>
+
+        <p>
+            Escala aproximada de tamanho:
+        </p>
+
+        <meter min="0" max="15" value="9.7">
+            9,7 metros
+        </meter>
+    </aside>
+
+    <section>
+        <details>
+            <summary>Por que o Allossauro é importante?</summary>
+
+            <p>
+                Fósseis de Allossauro são encontrados em depósitos do
+                Jurássico Superior, incluindo a Formação Morrison.
+                Esses fósseis ajudam pesquisadores a compreender os
+                grandes terópodes que viveram nesse período.
+            </p>
+        </details>
+    </section>
+
+    <section>
+        <h2>Formulário de pesquisa</h2>
+
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>Registre seu interesse pelo Allossauro</legend>
+
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required>
+                </p>
+
+                <p>
+                    <label for="data">Data da pesquisa:</label>
+                    <input
+                        type="date"
+                        id="data"
+                        name="data"
+                        required>
+                </p>
+
+                <p>
+                    <label for="nivel">Quanto você gosta de dinossauros?</label>
+                    <input
+                        type="range"
+                        id="nivel"
+                        name="nivel"
+                        min="0"
+                        max="10"
+                        value="5">
+                </p>
+
+                <p>
+                    <label for="dinossauro">Dinossauro favorito:</label>
+                    <input
+                        list="dinossauros"
+                        id="dinossauro"
+                        name="dinossauro"
+                        placeholder="Escolha ou digite"
+                        required>
+
+                    <datalist id="dinossauros">
+                        <option value="Allossauro">
+                        <option value="Tiranossauro">
+                        <option value="Estegossauro">
+                        <option value="Diplodoco">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="arquivo">Envie uma imagem ou pesquisa:</label>
+                    <input
+                        type="file"
+                        id="arquivo"
+                        name="arquivo">
+                </p>
+
+                <p>
+                    <label for="comentario">Comentário:</label>
+                    <textarea
+                        id="comentario"
+                        name="comentario"
+                        placeholder="Escreva o que você aprendeu sobre o Allossauro"
+                        required></textarea>
+                </p>
+
+                <button type="submit">Enviar pesquisa</button>
+            </fieldset>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        Projeto educacional sobre o Allossauro.
+    </p>
+
+    <p>
+        Fonte dos dados:
+        <cite>Natural History Museum</cite> e
+        <cite>Smithsonian Institution</cite>.
+    </p>
+</footer>
+
+</body>
+</html>
